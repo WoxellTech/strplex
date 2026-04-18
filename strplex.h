@@ -22,6 +22,6 @@ typedef struct strplex_element_s {
 } strplex_element;
 
 strplex_element *strplex_setstr(strplex *sp, char *ptr, uint8_t flags, const char *s, uint32_t max_length);
-strplex_element *strplex_addstr(strplex *sp, uint8_t flags, const char *s, uint32_t max_length);
+strplex_element *strplex_pushstr(strplex *sp, uint8_t flags, const char *s, uint32_t max_length);
 
 #endif

@@ -20,10 +20,10 @@ int main(void) {
         .data = v
     };
 
-    strplex_addstr(&sp, 0, "hello world", STRPLEX_MAXLEN);
-    strplex_addstr(&sp, 0, "how are you", STRPLEX_MAXLEN);
-    strplex_addstr(&sp, 0, "im under the water", STRPLEX_MAXLEN);
-    strplex_addstr(&sp, 0, "please help me :(", STRPLEX_MAXLEN);
+    strplex_pushstr(&sp, 0, "hello world", STRPLEX_MAXLEN);
+    strplex_pushstr(&sp, 0, "how are you", STRPLEX_MAXLEN);
+    strplex_pushstr(&sp, 0, "im under the water", STRPLEX_MAXLEN);
+    strplex_pushstr(&sp, 0, "please help me :(", STRPLEX_MAXLEN);
 
     strplex_print(&sp);
 }

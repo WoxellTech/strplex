@@ -25,7 +25,7 @@ strplex_element *strplex_setstr(strplex *sp, char *ptr, uint8_t flags, const cha
     return (strplex_element *)ptr;
 }
 
-strplex_element *strplex_addstr(strplex *sp, uint8_t flags, const char *s, uint32_t max_length) {
+strplex_element *strplex_pushstr(strplex *sp, uint8_t flags, const char *s, uint32_t max_length) {
     char *ptr = strplex_nextptr(sp->data + sp->endn);
     return strplex_setstr(sp, ptr, flags, s, max_length);
 }
